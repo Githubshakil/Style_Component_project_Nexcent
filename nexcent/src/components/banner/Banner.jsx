@@ -13,7 +13,7 @@ const Banner = () => {
                 <Register>Register</Register>
                 </Left>
                 <Right>
-                    Here is the image
+                    <BannerImg src="bannerimg.png" alt="banner" />
                 </Right>
            
             </Sidebyside>
@@ -31,6 +31,8 @@ const Background = styled.div`
  `;
 const Sidebyside = styled.div`
  display: flex;
+ align-items: center;
+  justify-content: space-between;
  `;
 const Left = styled.div`
  width: 60%;
@@ -73,5 +75,9 @@ font-weight: 500;
 line-height: 24px;
 color: #ffffff;
 margin-top: 32px;
+
+ `;
+
+ const BannerImg = styled.img`
 
  `;

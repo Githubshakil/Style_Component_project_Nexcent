@@ -7,7 +7,9 @@ const Navbar = () => {
     <Background>
         <Container>
             <Sidebyside>
-                <Logo>Logo</Logo>
+                <Logo>
+                    <LogoImg src="logo.png" alt="" />
+                </Logo>
                 <MenuItem>
                     <NavItem/>
                 </MenuItem>
@@ -32,10 +34,17 @@ const Background = styled.div`
 const Sidebyside = styled.div`
 display: flex;
 justify-content: space-between;
+align-items: center;
+
  `;
 
 const Logo = styled.div`
  width: 10%;
+ 
+ `;
+
+ const LogoImg = styled.img`
+ 
  
  `;
 
