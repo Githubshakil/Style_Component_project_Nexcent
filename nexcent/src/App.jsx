@@ -1,5 +1,6 @@
 import Banner from "./components/banner/Banner"
 import Navbar from "./components/navbar/Navbar"
+import Pixelgread from "./components/Pixelgread"
 
 
 
@@ -10,6 +11,7 @@ function App() {
     <>
      <Navbar />
      <Banner />
+     <Pixelgread/>
     </>
   )
 }
