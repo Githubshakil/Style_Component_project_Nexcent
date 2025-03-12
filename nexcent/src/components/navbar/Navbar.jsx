@@ -77,11 +77,13 @@ border: 1px solid #4caf4f;
 &:hover {
     background: ${(props) => props.$bg ? "#4caf4f" : "#4caf4f"};
     color: ${(props) => props.$bg ? "#ffffff" : "#ffffff"};
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 `;
 
 const ButtonSingup = styled(Button)`
 
-background: ${(props) => props.$bg ? "none" : "none"};
+background: ${(props) => props.$bg ? "white" : "white"};
 
 color: ${(props) => props.$bg ? "black" : "black"};
 

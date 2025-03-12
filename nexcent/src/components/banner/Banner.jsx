@@ -64,17 +64,24 @@ font-family: Inter;
  `;
 
  const Register = styled.button`
-background-color: #4caf4f;
+background: white;
 padding: 14px 32px;
 border-radius: 5px;
-border: none;
+border: 2px solid #4caf4f;
 font-family: Inter;
 font-size: 16px;
 font-style: normal;
-font-weight: 500;
+font-weight: 600;
 line-height: 24px;
-color: #ffffff;
+color:rgb(0, 0, 0);
 margin-top: 32px;
+cursor: pointer;
+transition: all 0.3s ease;
+&:hover {
+    background: #4caf4f;
+    color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
  `;
 
