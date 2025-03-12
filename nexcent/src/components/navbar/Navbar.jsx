@@ -52,6 +52,7 @@ const MenuItem = styled.div`
  width: 70%;
  display: flex;
  justify-content: center;
+ cursor: pointer;
 
  `;
 
@@ -68,13 +69,21 @@ border: none;
 font-family: Inter;
 font-size: 14px;
 font-style: normal;
-font-weight: 500;
+font-weight: 700;
 line-height: 20px;
+cursor: pointer;
+transition: all 0.3s ease;
+border: 1px solid #4caf4f;
+&:hover {
+    background: ${(props) => props.$bg ? "#4caf4f" : "#4caf4f"};
+    color: ${(props) => props.$bg ? "#ffffff" : "#ffffff"};
 `;
 
 const ButtonSingup = styled(Button)`
 
-background: ${(props) => props.$bg ? "#4caf4f" : "none"};
+background: ${(props) => props.$bg ? "none" : "none"};
 
-color: ${(props) => props.$bg ? "#ffffff" : "balck"};
+color: ${(props) => props.$bg ? "black" : "black"};
+
+
  `;
