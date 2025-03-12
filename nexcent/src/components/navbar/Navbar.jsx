@@ -14,8 +14,8 @@ const Navbar = () => {
                     <NavItem/>
                 </MenuItem>
                 <GroupButton>
-                    <ButtonLogin>Login</ButtonLogin>
-                    <ButtonSingup>Sing Up</ButtonSingup>
+                    <ButtonSingup>Login</ButtonSingup>
+                    <ButtonSingup $bg>Sing Up</ButtonSingup>
                 </GroupButton>
             </Sidebyside>
         </Container>
@@ -61,32 +61,20 @@ width: 20%;
 display: flex;
 column-gap: 14px;
  `;
-
-
-const ButtonLogin = styled.button`
+const Button = styled.button`
 padding: 10px 20px;
 border-radius: 5px;
-
-border: none;
-background-color: #4caf50;
-font-family: Inter;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: 20px;
-color: #ffffff;
-
-
- `;
-const ButtonSingup = styled.button`
-padding: 10px 20px;
-border-radius: 5px;
-
 border: none;
 font-family: Inter;
 font-size: 14px;
 font-style: normal;
 font-weight: 500;
 line-height: 20px;
+`;
 
+const ButtonSingup = styled(Button)`
+
+background: ${(props) => props.$bg ? "#4caf4f" : "none"};
+
+color: ${(props) => props.$bg ? "#ffffff" : "balck"};
  `;
