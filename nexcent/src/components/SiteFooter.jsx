@@ -2,17 +2,17 @@ import React from 'react'
 import styled from 'styled-components'
 import Container from './common/Container'
 
-const Pixelgread = () => {
+const SiteFooter = () => {
   return (
-        <Background>
+    <Background>
         <Container>
             <Sidebyside>
              <Left>
-                <BannerImg src="pixelgrade.png" alt="pixelgrade" />
+                <BannerImg src="pana.png" alt="pixelgrade" />
             </Left>
             <Right>
-                <Heading>The unseen of spending three years at Pixelgrade </Heading>
-                <Paragraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.</Paragraph>
+                <Heading>How to design your site footer like we did </Heading>
+                <Paragraph>Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui, at porta nisi facilisis finibus. In euismod augue vitae nisi ultricies, non aliquet urna tincidunt. Integer in nisi eget nulla commodo faucibus efficitur quis massa. Praesent felis est, finibus et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus ipsum id gravida.</Paragraph>
                 <Register>Learn More</Register>
                 
             </Right>
@@ -24,8 +24,7 @@ const Pixelgread = () => {
   )
 }
 
-export default Pixelgread
-
+export default SiteFooter
 
 
 
@@ -51,7 +50,7 @@ const Heading = styled.div`
  font-size: 36px;
  font-weight: 600;
  line-height: 44px;
- max-width: 657px;
+ max-width: 601px;
  color: #4D4D4D;
     font-family: Inter;
  `;
@@ -68,7 +67,7 @@ font-family: Inter;
  `;
 
  const Register = styled.button`
-background: white;
+background: #4caf4f;
 padding: 14px 32px;
 border-radius: 5px;
 border: 2px solid #4caf4f;
@@ -77,7 +76,7 @@ font-size: 16px;
 font-style: normal;
 font-weight: 600;
 line-height: 24px;
-color:rgb(0, 0, 0);
+color:rgb(255, 255, 255);
 margin-top: 32px;
 cursor: pointer;
 transition: all 0.3s ease;
